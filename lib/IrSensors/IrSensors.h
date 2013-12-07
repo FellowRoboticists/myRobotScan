@@ -46,6 +46,8 @@ class IrSensors {
   */
   boolean lowReflectionDetected(IrSensor sensor);
 
+  int getAmbientLevel(IrSensor sensor);
+
  private:
   /**
      Calibrates the specified sensor 

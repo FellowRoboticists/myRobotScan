@@ -40,6 +40,10 @@ void setup()
   // Center the servo
   sweepServo.write(90, 2000);
 
+  // Seed the random number generator from the ambient light
+  // level on the left sensor
+  randomSeed(irSensors.getAmbientLevel(IrLeft));
+
   Serial.println("Ready");
 }
 

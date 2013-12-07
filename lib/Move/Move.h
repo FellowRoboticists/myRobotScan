@@ -114,6 +114,10 @@ class Move {
    */
   void changeMoveState(MoveState newState);
 
+  int chanceRotationAngle();
+  int appropriateRotationAngle(int leftDistance, int rightDistance);
+  int moveToAvoidObstacle();
+
   MoveState state;
   int speed;
   int speedIncrement;

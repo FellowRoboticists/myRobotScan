@@ -210,65 +210,18 @@ void Move::movingDelay(long duration) {
 }
 
 void Move::roam() {
-  int distance = looker->lookAt(DIR_CENTER);
+  int forwardDistance = looker->lookAt(DIR_CENTER);
 
-  if (distance == 0) { 
-
+  if (forwardDistance == 0) { 
     // no sensor
     stop();
     Serial.println("No front sensor");
     return;  // No point in continuing...
-
-  } else if (distance <= MIN_DISTANCE) {
-    // Need to stop and look around to see if 
-    // there is a clear path
-    stop();
-
-    int leftDistance  = looker->lookAt(DIR_LEFT);
-    if (leftDistance > CLEAR_DISTANCE)  {
-
-      // Appears to be clear on the left...
-      rotate(-90);
-
-    } else {
-
-      // Not clear on the left; check to the right...
-      delay(500);
-      int rightDistance = looker->lookAt(DIR_RIGHT);
-      if (rightDistance > CLEAR_DISTANCE) {
-
-	// It's clear to the right. Let's go there...
-        rotate(90);   
-
-      } else {
-
-	// Hmm, not clear to the right or the left...
-	// What is the maximum clearance?
-        distance = max( leftDistance, rightDistance);
-
-        if (distance < CLEAR_DISTANCE / 2) {
-	  
-	  // If the maximum clearance we have is less than have
-	  // the acceptable clearance, move backwards for
-	  // one second, then turn around and go the other direction
-          timedMove(MOV_BACK, 1000); // back up for one second  
-          rotate(-180); // turn around
-
-        } else {
-
-	  // The maximum clearance was more than half the acceptable
-	  // clearance. Go right or left depending on which had the
-	  // most clearance
-          if (leftDistance > rightDistance) {
-            rotate(-90);
-          } else {
-            rotate(90);   
-	  }
-
-        }                  
-      } 
-    }
-  }   
+  }
+  
+  if (forwardDistance <= MIN_DISTANCE) {
+    moveToAvoidObstacle();
+  }
 }
 
 void Move::avoidEdge() {
@@ -295,3 +248,54 @@ void Move::avoidEdge() {
 
   }
 }
+
+int Move::chanceRotationAngle() {
+  return ((random(300) % 2) == 0) ? 90 : -90;
+}
+
+int Move::appropriateRotationAngle(int leftDistance, int rightDistance) {
+  int angle = 90; // Turn right
+  if (leftDistance == rightDistance) {
+    // Roll the dice to see which way we should turn...
+    angle = chanceRotationAngle();
+  } else if (leftDistance > rightDistance) {
+    angle = -90; // Turn left
+  }
+  return angle;
+}
+
+int Move::moveToAvoidObstacle() {
+  // Need to stop and look around to see if 
+  // there is a clear path
+  stop();
+
+  // You learned this when you first got your driver's 
+  // license: look both ways at a stop sign.
+  int leftDistance  = looker->lookAt(DIR_LEFT);
+  delay(500);
+  int rightDistance = looker->lookAt(DIR_RIGHT);
+
+  int maxDistance = max(leftDistance, rightDistance);
+
+  if (maxDistance > CLEAR_DISTANCE) {
+
+    // We got clearance. Rotate as appropriate and move on
+    rotate(appropriateRotationAngle(leftDistance, rightDistance));
+      
+  } else if (maxDistance < (CLEAR_DISTANCE / 2)) {
+
+    // If the maximum clearance we have is less than half
+    // the acceptable clearance, move backwards for
+    // one second, then turn around and go the other direction
+    timedMove(MOV_BACK, 1000);
+    rotate(-180); 
+
+  } else {
+
+    // The maximum clearance was more than half the acceptable
+    // clearance. Go right or left depending on which had the
+    // most clearance
+    rotate(appropriateRotationAngle(leftDistance, rightDistance));
+  }
+}
+

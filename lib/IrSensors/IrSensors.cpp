@@ -84,3 +84,7 @@ void IrSensors::calibrate(IrSensor sensor) {
     irSensorEdge[sensor]    = (ambient * (long)(100 + irEdgeThreshold)) / 100; 
   }
 }
+
+int IrSensors::getAmbientLevel(IrSensor sensor) {
+  return irSensorAmbient[sensor];
+}
