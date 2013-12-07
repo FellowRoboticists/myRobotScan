@@ -165,6 +165,10 @@ void Move::changeMoveState(MoveState newState) {
   } 
 }
 
+MoveState Move::getState() {
+  return state;
+}
+
 void Move::timedMove(MoveState direction, int duration) {
   Serial.print("Timed move ");
   if (direction == MOV_FORWARD) {

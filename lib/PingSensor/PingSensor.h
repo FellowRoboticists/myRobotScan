@@ -19,6 +19,8 @@ class PingSensor {
   */
   PingSensor(int pingPin);
 
+  void begin();
+
   /**
      Returns the distance in inches. It will return 0 if no
      Ping sensor is connected or the distance is

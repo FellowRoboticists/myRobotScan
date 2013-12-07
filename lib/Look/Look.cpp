@@ -22,6 +22,10 @@ void Look::begin() {
   if (irSensors) {
     irSensors->begin();
   }
+
+  if (ping) {
+    ping->begin();
+  }
 }
 
 boolean Look::irEdgeDetect(IrSensor sensor) {

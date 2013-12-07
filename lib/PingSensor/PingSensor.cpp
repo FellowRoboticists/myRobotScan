@@ -9,6 +9,9 @@ PingSensor::PingSensor(int pingPin) {
   pin = pingPin;
 }
 
+void PingSensor::begin() {
+}
+
 int PingSensor::getDistance() {
   /*
     The PING))) is triggered by a HIGH pulse of 2 or more microseconds.
