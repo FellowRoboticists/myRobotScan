@@ -1,4 +1,11 @@
 *~
 .build
 lib/AFMotor
+lib/Battery
+lib/IrSensors
+lib/LEDBlinker
+lib/Look
+lib/Move
+lib/PingSensor
 lib/RobotMotor
+lib/SoftServo/
