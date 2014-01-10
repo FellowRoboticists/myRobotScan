@@ -1,0 +1,226 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AFMotorController	lib/AFMotor/AFMotor.cpp	/^AFMotorController::AFMotorController(void) {$/;"	f	class:AFMotorController
+AFMotorController	lib/AFMotor/AFMotor.h	/^class AFMotorController$/;"	c
+AF_DCMotor	lib/AFMotor/AFMotor.cpp	/^AF_DCMotor::AF_DCMotor(uint8_t num, uint8_t freq) {$/;"	f	class:AF_DCMotor
+AF_DCMotor	lib/AFMotor/AFMotor.h	/^class AF_DCMotor$/;"	c
+AF_Stepper	lib/AFMotor/AFMotor.cpp	/^AF_Stepper::AF_Stepper(uint16_t steps, uint8_t num) {$/;"	f	class:AF_Stepper
+AF_Stepper	lib/AFMotor/AFMotor.h	/^class AF_Stepper {$/;"	c
+BACKWARD	lib/AFMotor/AFMotor.h	64;"	d
+BRAKE	lib/AFMotor/AFMotor.h	65;"	d
+Battery	lib/Battery/Battery.cpp	/^Battery::Battery(int monitorPin, int chargerPin, LEDBlinker *ledBlinker) {$/;"	f	class:Battery
+Battery	lib/Battery/Battery.h	/^class Battery {$/;"	c
+CENTER_IR_SENSOR_PIN	.build/leonardo/src/sketch.cpp	24;"	d	file:
+CHASSIS_4WD	lib/RobotMotor/RobotMotor.h	14;"	d
+CLEAR_DISTANCE	lib/Move/Move.h	9;"	d
+DIR_CENTER	lib/Look/Look.h	/^  DIR_CENTER $/;"	e	enum:LookDirection
+DIR_LEFT	lib/Look/Look.h	/^  DIR_LEFT,$/;"	e	enum:LookDirection
+DIR_RIGHT	lib/Look/Look.h	/^  DIR_RIGHT,$/;"	e	enum:LookDirection
+DOUBLE	lib/AFMotor/AFMotor.h	69;"	d
+FORWARD	lib/AFMotor/AFMotor.h	63;"	d
+INTERLEAVE	lib/AFMotor/AFMotor.h	70;"	d
+IrCenter	lib/IrSensors/IrSensors.h	/^  IrCenter,$/;"	e	enum:IrSensor
+IrLeft	lib/IrSensors/IrSensors.h	/^  IrLeft,$/;"	e	enum:IrSensor
+IrRight	lib/IrSensors/IrSensors.h	/^  IrRight$/;"	e	enum:IrSensor
+IrSensor	lib/IrSensors/IrSensors.h	/^enum IrSensor {$/;"	g
+IrSensors	lib/IrSensors/IrSensors.cpp	/^IrSensors::IrSensors(int leftPin, int centerPin, int rightPin) {$/;"	f	class:IrSensors
+IrSensors	lib/IrSensors/IrSensors.h	/^class IrSensors {$/;"	c
+LEDBlinker	lib/LEDBlinker/LEDBlinker.cpp	/^LEDBlinker::LEDBlinker(int ledPin) {$/;"	f	class:LEDBlinker
+LEDBlinker	lib/LEDBlinker/LEDBlinker.h	/^class LEDBlinker {$/;"	c
+LED_PIN	.build/leonardo/src/sketch.cpp	30;"	d	file:
+LEFT_IR_SENSOR_PIN	.build/leonardo/src/sketch.cpp	22;"	d	file:
+Look	lib/Look/Look.cpp	/^Look::Look(SoftServo *sweepServo, IrSensors *sensors, PingSensor *pingSensor) {$/;"	f	class:Look
+Look	lib/Look/Look.h	/^class Look {$/;"	c
+LookDirection	lib/Look/Look.h	/^enum LookDirection {$/;"	g
+MAX_DISTANCE	lib/Move/Move.h	10;"	d
+MC	lib/AFMotor/AFMotor.cpp	/^static AFMotorController MC;$/;"	v	file:
+MICROSTEP	lib/AFMotor/AFMotor.h	71;"	d
+MICROSTEPS	lib/AFMotor/AFMotor.h	15;"	d
+MIN_DISTANCE	lib/Move/Move.h	8;"	d
+MIN_SPEED	lib/RobotMotor/RobotMotor.cpp	/^const int MIN_SPEED = 40; \/\/ first table entry is 40% speed$/;"	v
+MIN_SPEED	lib/RobotMotor/RobotMotor.cpp	/^const int MIN_SPEED = 60; \/\/ first table entry is 60% speed$/;"	v
+MOTOR12_1KHZ	lib/AFMotor/AFMotor.h	25;"	d
+MOTOR12_1KHZ	lib/AFMotor/AFMotor.h	31;"	d
+MOTOR12_1KHZ	lib/AFMotor/AFMotor.h	37;"	d
+MOTOR12_2KHZ	lib/AFMotor/AFMotor.h	24;"	d
+MOTOR12_2KHZ	lib/AFMotor/AFMotor.h	30;"	d
+MOTOR12_2KHZ	lib/AFMotor/AFMotor.h	36;"	d
+MOTOR12_64KHZ	lib/AFMotor/AFMotor.h	22;"	d
+MOTOR12_64KHZ	lib/AFMotor/AFMotor.h	28;"	d
+MOTOR12_64KHZ	lib/AFMotor/AFMotor.h	34;"	d
+MOTOR12_8KHZ	lib/AFMotor/AFMotor.h	23;"	d
+MOTOR12_8KHZ	lib/AFMotor/AFMotor.h	29;"	d
+MOTOR12_8KHZ	lib/AFMotor/AFMotor.h	35;"	d
+MOTOR1_A	lib/AFMotor/AFMotor.h	54;"	d
+MOTOR1_B	lib/AFMotor/AFMotor.h	55;"	d
+MOTOR2_A	lib/AFMotor/AFMotor.h	56;"	d
+MOTOR2_B	lib/AFMotor/AFMotor.h	57;"	d
+MOTOR34_1KHZ	lib/AFMotor/AFMotor.h	47;"	d
+MOTOR34_64KHZ	lib/AFMotor/AFMotor.h	45;"	d
+MOTOR34_8KHZ	lib/AFMotor/AFMotor.h	46;"	d
+MOTOR3_A	lib/AFMotor/AFMotor.h	60;"	d
+MOTOR3_B	lib/AFMotor/AFMotor.h	61;"	d
+MOTOR4_A	lib/AFMotor/AFMotor.h	58;"	d
+MOTOR4_B	lib/AFMotor/AFMotor.h	59;"	d
+MOTORCLK	lib/AFMotor/AFMotor.h	93;"	d
+MOTORDATA	lib/AFMotor/AFMotor.h	95;"	d
+MOTORENABLE	lib/AFMotor/AFMotor.h	94;"	d
+MOTORLATCH	lib/AFMotor/AFMotor.h	92;"	d
+MOTOR_LEFT	lib/RobotMotor/RobotMotor.h	/^const int MOTOR_LEFT  = 0;$/;"	v
+MOTOR_RIGHT	lib/RobotMotor/RobotMotor.h	/^const int MOTOR_RIGHT = 1;$/;"	v
+MOV_BACK	lib/Move/Move.h	/^  MOV_BACK, $/;"	e	enum:MoveState
+MOV_FORWARD	lib/Move/Move.h	/^  MOV_FORWARD, $/;"	e	enum:MoveState
+MOV_LEFT	lib/Move/Move.h	/^  MOV_LEFT, $/;"	e	enum:MoveState
+MOV_RIGHT	lib/Move/Move.h	/^  MOV_RIGHT, $/;"	e	enum:MoveState
+MOV_ROTATE	lib/Move/Move.h	/^  MOV_ROTATE, $/;"	e	enum:MoveState
+MOV_STOP	lib/Move/Move.h	/^  MOV_STOP$/;"	e	enum:MoveState
+Move	lib/Move/Move.cpp	/^Move::Move(Look *look) {$/;"	f	class:Move
+Move	lib/Move/Move.h	/^class Move {$/;"	c
+MoveState	lib/Move/Move.h	/^enum MoveState {$/;"	g
+NBR_SPEEDS	lib/RobotMotor/RobotMotor.cpp	/^const int NBR_SPEEDS =  1 + (100 - MIN_SPEED)\/ SPEED_TABLE_INTERVAL;$/;"	v
+NUM_CELLS	lib/Battery/Battery.h	8;"	d
+NUM_IR_SENSORS	lib/IrSensors/IrSensors.h	8;"	d
+OBST_FRONT	lib/Look/Look.h	/^  OBST_FRONT,       \/\/ obstacle in front$/;"	e	enum:ObstacleType
+OBST_FRONT_EDGE	lib/Look/Look.h	/^  OBST_FRONT_EDGE,  \/\/ edge detect at both left & right sensors$/;"	e	enum:ObstacleType
+OBST_LEFT_EDGE	lib/Look/Look.h	/^  OBST_LEFT_EDGE,   \/\/ left edge detected $/;"	e	enum:ObstacleType
+OBST_NONE	lib/Look/Look.h	/^  OBST_NONE,        \/\/ no obstacle detected$/;"	e	enum:ObstacleType
+OBST_REAR	lib/Look/Look.h	/^  OBST_REAR         \/\/ obstacle behind $/;"	e	enum:ObstacleType
+OBST_RIGHT_EDGE	lib/Look/Look.h	/^  OBST_RIGHT_EDGE,  \/\/ right edge detected$/;"	e	enum:ObstacleType
+ObstacleType	lib/Look/Look.h	/^enum ObstacleType {$/;"	g
+PING_SENSOR_PIN	.build/leonardo/src/sketch.cpp	27;"	d	file:
+PingSensor	lib/PingSensor/PingSensor.cpp	/^PingSensor::PingSensor(int pingPin) {$/;"	f	class:PingSensor
+PingSensor	lib/PingSensor/PingSensor.h	/^class PingSensor {$/;"	c
+RELEASE	lib/AFMotor/AFMotor.h	66;"	d
+RIGHT_IR_SENSOR_PIN	.build/leonardo/src/sketch.cpp	23;"	d	file:
+SINGLE	lib/AFMotor/AFMotor.h	68;"	d
+SPEED_TABLE_INTERVAL	lib/RobotMotor/RobotMotor.cpp	/^const int SPEED_TABLE_INTERVAL = 10; \/\/ each table entry is 10% faster speed$/;"	v
+SWEEP_SERVO_PIN	.build/leonardo/src/sketch.cpp	29;"	d	file:
+SoftServo	lib/SoftServo/SoftServo.cpp	/^SoftServo::SoftServo(int servoPin) {$/;"	f	class:SoftServo
+SoftServo	lib/SoftServo/SoftServo.h	/^class SoftServo {$/;"	c
+_AFMotor_h_	lib/AFMotor/AFMotor.h	8;"	d
+_Battery_h_	lib/Battery/Battery.h	6;"	d
+_IrSensors_h_	lib/IrSensors/IrSensors.h	6;"	d
+_LEDBlinker_h_	lib/LEDBlinker/LEDBlinker.h	6;"	d
+_Look_h_	lib/Look/Look.h	6;"	d
+_Move_h_	lib/Move/Move.h	6;"	d
+_PingSensor_h_	lib/PingSensor/PingSensor.h	6;"	d
+_SoftServo_h_	lib/SoftServo/SoftServo.h	6;"	d
+appropriateRotationAngle	lib/Move/Move.cpp	/^int Move::appropriateRotationAngle(int leftDistance, int rightDistance) {$/;"	f	class:Move
+avoidEdge	lib/Move/Move.cpp	/^void Move::avoidEdge() {$/;"	f	class:Move
+backward	lib/Move/Move.cpp	/^void Move::backward() {$/;"	f	class:Move
+batteryCritical	lib/Battery/Battery.h	/^  const int batteryCritical = 1000 * NUM_CELLS;$/;"	m	class:Battery
+batteryFull	lib/Battery/Battery.h	/^  const int batteryFull     = 1500 * NUM_CELLS;$/;"	m	class:Battery
+batteryMv	lib/Battery/Battery.cpp	/^int Battery::batteryMv() {$/;"	f	class:Battery
+batteryWarning	lib/Battery/Battery.h	/^  const int batteryWarning  = 1100 * NUM_CELLS;$/;"	m	class:Battery
+begin	lib/Battery/Battery.cpp	/^void Battery::begin() {$/;"	f	class:Battery
+begin	lib/IrSensors/IrSensors.cpp	/^void IrSensors::begin() {$/;"	f	class:IrSensors
+begin	lib/LEDBlinker/LEDBlinker.cpp	/^void LEDBlinker::begin() {$/;"	f	class:LEDBlinker
+begin	lib/Look/Look.cpp	/^void Look::begin() {$/;"	f	class:Look
+begin	lib/Move/Move.cpp	/^void Move::begin() {$/;"	f	class:Move
+begin	lib/PingSensor/PingSensor.cpp	/^void PingSensor::begin() {$/;"	f	class:PingSensor
+begin	lib/SoftServo/SoftServo.cpp	/^void SoftServo::begin() {$/;"	f	class:SoftServo
+blinkNumber	lib/LEDBlinker/LEDBlinker.cpp	/^void LEDBlinker::blinkNumber(int number) {$/;"	f	class:LEDBlinker
+brake	lib/Move/Move.cpp	/^void Move::brake() {$/;"	f	class:Move
+calibrate	lib/IrSensors/IrSensors.cpp	/^void IrSensors::calibrate(IrSensor sensor) {$/;"	f	class:IrSensors
+chanceRotationAngle	lib/Move/Move.cpp	/^int Move::chanceRotationAngle() {$/;"	f	class:Move
+changeMoveState	lib/Move/Move.cpp	/^void Move::changeMoveState(MoveState newState) {$/;"	f	class:Move
+chargePin	lib/Battery/Battery.h	/^  int chargePin;$/;"	m	class:Battery
+check	lib/Battery/Battery.cpp	/^void Battery::check(Move *mover) {$/;"	f	class:Battery
+currentstep	lib/AFMotor/AFMotor.h	/^  uint8_t currentstep;$/;"	m	class:AF_Stepper
+differential	lib/RobotMotor/RobotMotor.cpp	/^const int differential = 5; \/\/ % faster left motor turns compared to right  $/;"	v
+enable	lib/AFMotor/AFMotor.cpp	/^void AFMotorController::enable(void) {$/;"	f	class:AFMotorController
+faster	lib/Move/Move.cpp	/^void Move::faster(int increment) {$/;"	f	class:Move
+flash	lib/LEDBlinker/LEDBlinker.cpp	/^void LEDBlinker::flash(int percent) {$/;"	f	class:LEDBlinker
+flashCritical	lib/LEDBlinker/LEDBlinker.cpp	/^void LEDBlinker::flashCritical() {$/;"	f	class:LEDBlinker
+forward	lib/Move/Move.cpp	/^void Move::forward() {$/;"	f	class:Move
+getAmbientLevel	lib/IrSensors/IrSensors.cpp	/^int IrSensors::getAmbientLevel(IrSensor sensor) {$/;"	f	class:IrSensors
+getAverageDistance	lib/PingSensor/PingSensor.cpp	/^int PingSensor::getAverageDistance(int numSamples) {$/;"	f	class:PingSensor
+getDistance	lib/PingSensor/PingSensor.cpp	/^int PingSensor::getDistance() {$/;"	f	class:PingSensor
+getState	lib/Move/Move.cpp	/^MoveState Move::getState() {$/;"	f	class:Move
+hasValidPin	lib/IrSensors/IrSensors.cpp	/^boolean IrSensors::hasValidPin(IrSensor sensor) {$/;"	f	class:IrSensors
+highReflectionDetected	lib/IrSensors/IrSensors.cpp	/^boolean IrSensors::highReflectionDetected(IrSensor sensor) {$/;"	f	class:IrSensors
+initPWM1	lib/AFMotor/AFMotor.cpp	/^inline void initPWM1(uint8_t freq) {$/;"	f
+initPWM2	lib/AFMotor/AFMotor.cpp	/^inline void initPWM2(uint8_t freq) {$/;"	f
+initPWM3	lib/AFMotor/AFMotor.cpp	/^inline void initPWM3(uint8_t freq) {$/;"	f
+initPWM4	lib/AFMotor/AFMotor.cpp	/^inline void initPWM4(uint8_t freq) {$/;"	f
+irEdgeDetect	lib/Look/Look.cpp	/^boolean Look::irEdgeDetect(IrSensor sensor) {$/;"	f	class:Look
+irEdgeThreshold	lib/IrSensors/IrSensors.h	/^  const int irEdgeThreshold    = 90; \/\/ % level above ambient to trigger edge$/;"	m	class:IrSensors
+irReflectThreshold	lib/IrSensors/IrSensors.h	/^  const int irReflectThreshold = 10; \/\/ % level below ambient to trigger reflection$/;"	m	class:IrSensors
+irSensorAmbient	lib/IrSensors/IrSensors.h	/^  int irSensorAmbient[NUM_IR_SENSORS];$/;"	m	class:IrSensors
+irSensorEdge	lib/IrSensors/IrSensors.h	/^  int irSensorEdge[NUM_IR_SENSORS];$/;"	m	class:IrSensors
+irSensorPins	lib/IrSensors/IrSensors.h	/^  byte irSensorPins[NUM_IR_SENSORS];$/;"	m	class:IrSensors
+irSensorReflect	lib/IrSensors/IrSensors.h	/^  int irSensorReflect[NUM_IR_SENSORS];$/;"	m	class:IrSensors
+irSensors	lib/Look/Look.h	/^  IrSensors *irSensors;$/;"	m	class:Look
+isDetected	lib/IrSensors/IrSensors.h	/^  boolean isDetected[NUM_IR_SENSORS];$/;"	m	class:IrSensors
+isPathClear	lib/Move/Move.cpp	/^boolean Move::isPathClear() {$/;"	f	class:Move
+latch_state	lib/AFMotor/AFMotor.cpp	/^static uint8_t latch_state;$/;"	v	file:
+latch_tx	lib/AFMotor/AFMotor.cpp	/^void AFMotorController::latch_tx(void) {$/;"	f	class:AFMotorController
+led	lib/Battery/Battery.h	/^  LEDBlinker *led;$/;"	m	class:Battery
+left	lib/Move/Move.cpp	/^void Move::left() {$/;"	f	class:Move
+lookAt	lib/Look/Look.cpp	/^int Look::lookAt(LookDirection direction) {$/;"	f	class:Look
+looker	.build/leonardo/src/sketch.cpp	/^Look looker(&sweepServo, &irSensors, &pingSensor);$/;"	v
+looker	.build/leonardo/src/sketch.cpp	/^Move mover(&looker);$/;"	v
+looker	lib/Move/Move.h	/^  Look *looker;$/;"	m	class:Move
+loop	.build/leonardo/src/sketch.cpp	/^void loop()$/;"	f
+lowReflectionDetected	lib/IrSensors/IrSensors.cpp	/^boolean IrSensors::lowReflectionDetected(IrSensor sensor) {$/;"	f	class:IrSensors
+microsecondsToCentimeters	lib/PingSensor/PingSensor.cpp	/^long PingSensor::microsecondsToCentimeters(long microseconds) {$/;"	f	class:PingSensor
+microstepcurve	lib/AFMotor/AFMotor.cpp	/^uint8_t microstepcurve[] = {0, 25, 50, 74, 98, 120, 141, 162, 180, 197, 212, 225, 236, 244, 250, 253, 255};$/;"	v
+microstepcurve	lib/AFMotor/AFMotor.cpp	/^uint8_t microstepcurve[] = {0, 50, 98, 142, 180, 212, 236, 250, 255};$/;"	v
+motorBegin	lib/RobotMotor/RobotMotor.cpp	/^void motorBegin(int motor)$/;"	f
+motorBrake	lib/RobotMotor/RobotMotor.cpp	/^void motorBrake(int motor)$/;"	f
+motorForward	lib/RobotMotor/RobotMotor.cpp	/^void motorForward(int motor, int speed)$/;"	f
+motorReverse	lib/RobotMotor/RobotMotor.cpp	/^void motorReverse(int motor, int speed)$/;"	f
+motorSetSpeed	lib/RobotMotor/RobotMotor.cpp	/^void motorSetSpeed(int motor, int speed)$/;"	f
+motorSpeed	lib/RobotMotor/RobotMotor.cpp	/^int  motorSpeed[2]  = {0,0}; \/\/ left and right motor speeds stored here (0-100%)$/;"	v
+motorStop	lib/RobotMotor/RobotMotor.cpp	/^void motorStop(int motor)$/;"	f
+motornum	lib/AFMotor/AFMotor.h	/^  uint8_t motornum, pwmfreq;$/;"	m	class:AF_DCMotor
+motors	lib/RobotMotor/RobotMotor.cpp	/^AF_DCMotor motors[] = {$/;"	v
+moveToAvoidObstacle	lib/Move/Move.cpp	/^int Move::moveToAvoidObstacle() {$/;"	f	class:Move
+movingDelay	lib/Move/Move.cpp	/^void Move::movingDelay(long duration) {$/;"	f	class:Move
+onestep	lib/AFMotor/AFMotor.cpp	/^uint8_t AF_Stepper::onestep(uint8_t dir, uint8_t style) {$/;"	f	class:AF_Stepper
+pin	lib/Battery/Battery.h	/^  int pin;$/;"	m	class:Battery
+pin	lib/LEDBlinker/LEDBlinker.h	/^  int pin;$/;"	m	class:LEDBlinker
+pin	lib/PingSensor/PingSensor.h	/^  int pin;$/;"	m	class:PingSensor
+pin	lib/SoftServo/SoftServo.h	/^  int pin;$/;"	m	class:SoftServo
+ping	lib/Look/Look.h	/^  PingSensor *ping;$/;"	m	class:Look
+pwmfreq	lib/AFMotor/AFMotor.h	/^  uint8_t motornum, pwmfreq;$/;"	m	class:AF_DCMotor
+release	lib/AFMotor/AFMotor.cpp	/^void AF_Stepper::release(void) {$/;"	f	class:AF_Stepper
+revsteps	lib/AFMotor/AFMotor.h	/^  uint16_t revsteps; \/\/ # steps per revolution$/;"	m	class:AF_Stepper
+right	lib/Move/Move.cpp	/^void Move::right() {$/;"	f	class:Move
+roam	lib/Move/Move.cpp	/^void Move::roam() {$/;"	f	class:Move
+rotate	lib/Move/Move.cpp	/^void Move::rotate(int angle) {$/;"	f	class:Move
+rotationAngleToTime	lib/Move/Move.cpp	/^long Move::rotationAngleToTime(int angle) {$/;"	f	class:Move
+rotationTime	lib/RobotMotor/RobotMotor.cpp	/^int rotationTime[NBR_SPEEDS] = {5500, 3300, 2400, 2000, 1750, 1550, 1150}; \/\/ time $/;"	v
+rotationTime	lib/RobotMotor/RobotMotor.cpp	/^int rotationTime[NBR_SPEEDS] = {7700, 5500, 4600, 4200, 3950}; \/\/ time$/;"	v
+run	lib/AFMotor/AFMotor.cpp	/^void AF_DCMotor::run(uint8_t cmd) {$/;"	f	class:AF_DCMotor
+sensesObstacle	lib/Look/Look.cpp	/^boolean Look::sensesObstacle(ObstacleType obstacle, int minDistance) {$/;"	f	class:Look
+sensorNames	lib/IrSensors/IrSensors.cpp	/^const char *sensorNames[] = {$/;"	v
+servo	lib/Look/Look.h	/^  SoftServo *servo;$/;"	m	class:Look
+servoAngles	lib/Look/Look.h	/^  const int servoAngles[3] = { 150, 30, 90 };$/;"	m	class:Look
+servoDelay	lib/Look/Look.h	/^  const int servoDelay = 500;$/;"	m	class:Look
+setPWM1	lib/AFMotor/AFMotor.cpp	/^inline void setPWM1(uint8_t s) {$/;"	f
+setPWM2	lib/AFMotor/AFMotor.cpp	/^inline void setPWM2(uint8_t s) {$/;"	f
+setPWM3	lib/AFMotor/AFMotor.cpp	/^inline void setPWM3(uint8_t s) {$/;"	f
+setPWM4	lib/AFMotor/AFMotor.cpp	/^inline void setPWM4(uint8_t s) {$/;"	f
+setSpeed	lib/AFMotor/AFMotor.cpp	/^void AF_DCMotor::setSpeed(uint8_t speed) {$/;"	f	class:AF_DCMotor
+setSpeed	lib/AFMotor/AFMotor.cpp	/^void AF_Stepper::setSpeed(uint16_t rpm) {$/;"	f	class:AF_Stepper
+setSpeed	lib/Move/Move.cpp	/^void Move::setSpeed(int newSpeed) {$/;"	f	class:Move
+setup	.build/leonardo/src/sketch.cpp	/^void setup()$/;"	f
+slower	lib/Move/Move.cpp	/^void Move::slower(int decrement) {$/;"	f	class:Move
+speed	lib/Move/Move.h	/^  int speed;$/;"	m	class:Move
+speedIncrement	lib/Move/Move.h	/^  int speedIncrement;$/;"	m	class:Move
+speedTable	lib/RobotMotor/RobotMotor.cpp	/^int speedTable[NBR_SPEEDS]  =  {40,     50,   60,   70,   80,   90,  100}; \/\/ speeds  $/;"	v
+speedTable	lib/RobotMotor/RobotMotor.cpp	/^int speedTable[NBR_SPEEDS]  =  {60,   70,   80,   90,  100}; \/\/ speeds  $/;"	v
+state	lib/Move/Move.h	/^  MoveState state;$/;"	m	class:Move
+states	lib/Move/Move.cpp	/^const char *states[] = {$/;"	v
+step	lib/AFMotor/AFMotor.cpp	/^void AF_Stepper::step(uint16_t steps, uint8_t dir,  uint8_t style) {$/;"	f	class:AF_Stepper
+steppernum	lib/AFMotor/AFMotor.h	/^  uint8_t steppernum;$/;"	m	class:AF_Stepper
+steppingcounter	lib/AFMotor/AFMotor.h	/^  uint32_t usperstep, steppingcounter;$/;"	m	class:AF_Stepper
+stop	lib/Move/Move.cpp	/^void Move::stop() {$/;"	f	class:Move
+timedMove	lib/Move/Move.cpp	/^void Move::timedMove(MoveState direction, int duration) {$/;"	f	class:Move
+usperstep	lib/AFMotor/AFMotor.h	/^  uint32_t usperstep, steppingcounter;$/;"	m	class:AF_Stepper
+write	lib/SoftServo/SoftServo.cpp	/^void SoftServo::write(int angle, long servoDelay) {$/;"	f	class:SoftServo
