@@ -2,17 +2,18 @@
 // myRobotScan Arduino sketch
 //
 // Copyright (c) 2012 Michael Margolis
-// Copyright (c) 2013 Dave Sieh
+// Copyright (c) 2013,2014 Dave Sieh
 //
 // See LICENSE.txt for details.
 
 #include "RobotMotor.h"
-#include <LEDBlinker.h>
+#include "LEDBlinker.h"
 #include <SoftServo.h>
-#include <IrSensors.h>
-#include <PingSensor.h>
-#include <Look.h>
-#include <Move.h>
+#include "IrSensors.h"
+#include "PingSensor.h"
+#include "Look.h"
+#include "Move.h"
+#include <pspc_support.h>
 
 // Analog Pins
 #define LEFT_IR_SENSOR_PIN 0
@@ -51,7 +52,7 @@ void setup()
   // level on the left sensor
   randomSeed(irSensors.getAmbientLevel(IrLeft));
 
-  Serial.println("Ready");
+  Serial.println(P("Ready"));
 }
 
 void loop()

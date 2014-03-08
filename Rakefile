@@ -19,14 +19,9 @@ env = ArduinoEnvironment.new BASE_DIR
 
 LIBS = [
   library('AFMotor', 'Adafruit-Motor-Shield-library', 'robot_kit'),
-  library('Battery'),
-  library('IrSensors'),
-  library('LEDBlinker'),
-  library('Look'),
-  library('Move'),
-  library('PingSensor'),
   library('RobotMotor'),
-  library('SoftServo')
+  library('SoftServo'),
+  library('pspc_support')
 ]
 
 create_all_library_tasks env, LIBS, :default
