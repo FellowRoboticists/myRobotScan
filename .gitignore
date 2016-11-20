@@ -9,6 +9,6 @@ lib/Look
 lib/Move
 lib/PingSensor
 lib/RobotMotor
-lib/SoftServo/
+lib/SoftServo
 lib/pspc_support
 words.txt
